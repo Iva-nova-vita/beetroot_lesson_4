@@ -1,129 +1,140 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
     <title>CSS Dinner shoping list</title>
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.png" type="image/png" />
     <style>
-        div {
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            background-color: #383d43;
-            margin: 0.5em;
-            height: 95vh;
+      div {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        background-color: #383d43;
+        margin: 0.5em;
+        height: 95vh;
+      }
 
-        }
+      header,
+      .footer {
+        background-color: #494e55;
+        text-align: center;
+        color: #e97d7e;
+        box-sizing: border-box;
+        padding: 20px;
+      }
 
-        header,
-        .footer {
-            background-color: #494e55;
-            text-align: center;
-            color: #e97d7e;
-            box-sizing: border-box;
-            padding: 20px;
+      h1 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
 
-        }
+      p {
+        font-size: 1.3em;
+        padding: 0;
+        margin: 0;
+      }
 
-        h1 {
-            padding-bottom: 0;
-            margin-bottom: 0;
-        }
+      span {
+        font-size: 0.8em;
+        color: lightgrey;
+      }
 
-        p {
-            font-size: 1.3em;
-            padding: 0;
-            margin: 0;
-        }
+      section {
+        background-color: #89849f;
+        width: 60%;
+        margin: 0 auto;
+      }
 
-        span {
-            font-size: 0.8em;
-            color: lightgrey;
+      ul {
+        list-style: none;
+        padding: 0;
+      }
 
-        }
+      li {
+        padding: 15px;
+        color: white;
+        vertical-align: middle;
+      }
 
-        section {
-            background-color: #89849f;
-            width: 60%;
-            margin: 0 auto;
-        }
+      li:nth-child(even) {
+        background-color: #7b7694;
+      }
+      input:checked ~ label {
+        text-decoration: line-through;
+        color: lightgrey;
+      }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+      li:hover {
+        background-color: #625e78;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+      }
+      li:active {
+        background-color: red;
+      }
+      label {
+        display: inline-block;
+        height: 100%;
+      }
 
-        li {
-            padding: 15px;
-            color: white;
-            vertical-align: middle;
-        }
+      label > span::before {
+        content: "(";
+      }
 
-        li:nth-child(even) {
-            background-color: #7b7694;
-        }
-        input:checked~label {
-            text-decoration: line-through;
-            color: lightgrey;
-        }
-        
-
-        li:hover {
-            background-color: #625e78;
-            border-top: 2px solid white;
-            border-bottom: 2px solid white;
-
-        }
-        li:active {
-            background-color: red;
-        }
-
-
-        label>span::before {
-            content: "(";
-        }
-
-        label>span::after {
-            content: ")"
-        }
-
-        
+      label > span::after {
+        content: ")";
+      }
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div>
-        <header>
-            <h1>CSS Dinner shoping list</h1>
-            <p>Let's go to the mall!</p>
-        </header>
-        <main>
-            <section>
-                <ul>
-                    <li><input type="checkbox" id="1"> <label for="1">lot of pickles <span>for the next lessons about
-                                CSS</span></label></li>
-                    <li><input type="checkbox" id="2"><label for="2">10 apples <span>for more CSS
-                                manipulations</span></label></li>
-                    <li><input type="checkbox" id="3"><label for="3">20 oranges <span>because they are
-                                awesome</span></label></li>
-                    <li><input type="checkbox" id="4"><label for="4">13 plates <span>hm...they always
-                                dissapear</span></label></li>
-                    <li><input type="checkbox" id="5"><label for="5">15 bentos </label></li>
-                    <li><input type="checkbox" id="6"><label for="6">1 buttle of Sake ^_^ <span>for me
-                                friends</span></label></li>
-                </ul>
-            </section>
-        </main>
-        <br>
-        <footer>
-            <section class="footer">
-                <p>Bon appetit!</p>
-            </section>
-
-        </footer>
+      <header>
+        <h1>CSS Dinner shoping list</h1>
+        <p>Let's go to the mall!</p>
+      </header>
+      <main>
+        <section>
+          <ul>
+            <li>
+              <input type="checkbox" id="1" />
+              <label for="1"
+                >lot of pickles
+                <span>for the next lessons about CSS</span></label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="2" /><label for="2"
+                >10 apples <span>for more CSS manipulations</span></label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="3" /><label for="3"
+                >20 oranges <span>because they are awesome</span></label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="4" /><label for="4"
+                >13 plates <span>hm...they always dissapear</span></label
+              >
+            </li>
+            <li>
+              <input type="checkbox" id="5" /><label for="5">15 bentos </label>
+            </li>
+            <li>
+              <input type="checkbox" id="6" /><label for="6"
+                >1 buttle of Sake ^_^ <span>for me friends</span></label
+              >
+            </li>
+          </ul>
+        </section>
+      </main>
+      <br />
+      <footer>
+        <section class="footer">
+          <p>Bon appetit!</p>
+        </section>
+      </footer>
     </div>
-</body>
-
-
+  </body>
 </html>
